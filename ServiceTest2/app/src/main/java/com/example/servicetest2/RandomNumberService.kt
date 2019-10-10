@@ -40,7 +40,6 @@ class RandomNumberService : Service() {
         val rand = Random()
         val number = rand.nextInt(100)
         toast("Random Number : $number")
-//        toast(DateTime.now().toString("dd-MM-yyyy"))
         mHandler.postDelayed(mRunnable, 5000)
     }
 }
